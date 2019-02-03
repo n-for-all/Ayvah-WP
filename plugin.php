@@ -3,7 +3,7 @@
 /*
 Plugin Name: Cf7 Ayvah
 Plugin URI: https://ayvah.io
-Description: Integrates AVA with Contact form 7
+Description: Integrates Ayvah with Contact form 7
 Author: AAAGENCY - @n-for-all
 Author URI: https://aaagency.ae
 Text Domain: cf7-ava
@@ -60,14 +60,14 @@ class WPCF7_Ava
     public function version_notice__error()
     {
         $class = 'notice notice-error';
-        $message = __('Contact form 7 AVA requires Contact Form 7 version '.WPCF7_AVA_VERSION.' or higher.', 'cf7-ava');
+        $message = __('Contact form 7 Ayvah requires Contact Form 7 version '.WPCF7_AVA_VERSION.' or higher.', 'cf7-ava');
 
         printf('<div class="%1$s"><p>%2$s</p></div>', $class, $message);
     }
     public function curl_notice__error()
     {
         $class = 'notice notice-error';
-        $message = __('CURL extension should be enabled and active on this webserver for AVA to work.', 'cf7-ava');
+        $message = __('CURL extension should be enabled and active on this webserver for Ayvah to work.', 'cf7-ava');
 
         printf('<div class="%1$s"><p>%2$s</p></div>', $class, $message);
     }
@@ -91,7 +91,7 @@ class WPCF7_Ava
     public function editor_panels($panels)
     {
         $panels['ava-panel'] = array(
-          'title' => __('AVA', WPCF7_AVA_TEXT_DOMAIN),
+          'title' => __('Ayvah', WPCF7_AVA_TEXT_DOMAIN),
           'callback' => array(&$this, 'editor_panel')
         );
         return $panels;
