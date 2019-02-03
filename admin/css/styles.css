@@ -1,0 +1,41 @@
+.wpcf7-ava-item label {
+    display: block;
+}
+
+.wpcf7-ava-item {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    max-width: 300px;
+}
+
+.wpcf7-ava-item .left, .wpcf7-ava-item .right {
+    float: left;
+    margin-right: 15px;
+}
+
+.wpcf7-ava-item:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.wpcf7-ava-item input {
+    width: 100%;
+}
+
+#wpcf7-ava-items .wpcf7-ava-item {
+    max-width: none;
+}
+
+#wpcf7-ava-items .wpcf7-ava-item .left input, #wpcf7-ava-items .wpcf7-ava-item .right input {
+    width: 100%;
+}
+#wpcf7-ava-items .button-remove-ava{
+    margin-top: 15px;
+}
+#wpcf7-ava-items .wpcf7-ava-item .left, #wpcf7-ava-items .wpcf7-ava-item .right {
+    width: 300px;
+}
+#add-field-ava{
+    margin: 10px 0;
+}
