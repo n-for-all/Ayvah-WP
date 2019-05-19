@@ -217,7 +217,8 @@ class WPCF7_Ava
             );
             $honey_pot = count($settings['fields']);
             foreach((array)$settings['fields'] as $map){
-                $fields[$map['to']] = isset($this->posted_data[$map['from']]) ? $this->posted_data[$map['from']]: '';
+                $from = str_replace(array_keys($this->posted_data), array_values($this->posted_data), $map['from']);
+                $fields[$map['to']] = $from;
                 $honey_pot += intval(str_replace('field_', '', $map['to']));
             }
             $fields['field_'.$honey_pot] = '';
