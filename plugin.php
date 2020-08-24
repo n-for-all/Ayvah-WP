@@ -196,7 +196,7 @@ class WPCF7_Ava
             //Eat Basir's cookie
             $utms = array();
             if(isset($_COOKIE['_ava_utmz'])){
-                list($source, $medium, $term, $campaign, $content) = array_map(explode('|', $_COOKIE['_ava_utmz']), 'trim');
+                list($source, $medium, $term, $campaign, $content) = array_map('trim', explode('|', $_COOKIE['_ava_utmz']));
                 $utms = array(
                     'utm_source' => $source,
                     'utm_medium' => $medium,
