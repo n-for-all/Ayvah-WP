@@ -8,8 +8,7 @@ class Form
     /** @var Request $client */
     protected $client;
     protected $apiKey;
-    // protected $endpoint = 'https://setback.io/form/%domain%/%id%/%locale%/';
-    protected $endpoint = 'https://setback.io/form/%domain%/%id%/%locale%/';
+    protected $endpoint = 'https://ayvah.io/form/%domain%/%id%/%locale%/';
     protected $headers = [];
 
     public function __construct($domain, $id, $locale)
